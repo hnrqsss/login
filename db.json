@@ -5,14 +5,24 @@
             "name": "henrique",
             "username": "hnrqss",
             "password": "123",
-            "statusId": 1
+            "userTypeId": 1
         },
         {
             "id": 2,
-            "name": "other",
-            "username": "other",
+            "name": "user exemple",
+            "username": "user",
             "password": "123",
-            "statusId": 1
+            "userTypeId": 2
+        }
+    ],
+    "userType": [
+        {
+            "id": 1,
+            "name": "admin"
+        },
+        {
+            "id": 2,
+            "name": "user"
         }
     ]
 }
