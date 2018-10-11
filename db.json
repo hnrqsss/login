@@ -3,6 +3,7 @@
         {
             "id": 1,
             "name": "henrique",
+            "email": "henrique@gmail.com",
             "username": "hnrqss",
             "password": "123",
             "userTypeId": 1
@@ -10,6 +11,7 @@
         {
             "id": 2,
             "name": "user exemple",
+            "email": "user@gmail.com",
             "username": "user",
             "password": "123",
             "userTypeId": 2

@@ -1,16 +1,41 @@
 import React from 'react'
 import './style/index.css'
+import LoginForm from './LoginForm'
 
-const Login = props => {
-    return (
-        <div className='wrapper-login'>
-            <div className='login-content'>
-                <input type='text' placeholder='username' />
-                <input type='password' placeholder='password' />
-                <button type='button' className='btn-login'>Login</button>
+import {    BrowserRouter as Router, 
+            Route, 
+            Switch,
+            Redirect } from 'react-router-dom'
+
+import Panel from '../panel'
+// redux imports
+import { createStore, applyMiddleware } from 'redux'
+import { Provider } from 'react-redux'
+import thunk from 'redux-thunk'
+import { reducer } from './redux/reducers/reducers'
+
+const store = createStore(
+    reducer,
+    applyMiddleware(thunk)
+)
+
+
+class Login extends React.Component {
+    render() {
+        return (
+            <div>
+                <Provider store={store}>
+                    <Router>
+                        <Switch>
+                            <Route exact path='/' component={LoginForm} />
+                            <Route path='/painel' component={Panel} />
+                        </Switch>
+                    </Router>
+                </Provider>
             </div>
-        </div>
-    )
+        )
+    }
 }
+
 
 export default Login

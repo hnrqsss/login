@@ -18,6 +18,22 @@
     max-width: 340px;
 }
 
+.wrapper-login .login-content .image-content {
+    width: 26vw;
+    height: 26vw;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid #e46717;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.3);
+}
+
+.wrapper-login .login-content .image-content img {
+    width: 17vw;
+    height: 17vw;
+}
 
 .wrapper-login .login-content input,
 .wrapper-login .login-content button {
@@ -31,11 +47,19 @@
 .wrapper-login .login-content input {
     padding-left: 10%;
     width: 90%;
+    background: transparent;
+    border: 3px solid #fff;
+    color: #fff;
+}
 
+.wrapper-login .login-content input::placeholder {
+    color: #fff;
 }
 
 .wrapper-login .login-content button {
-    background-image: linear-gradient(141deg, #FFD80B 51%, #ffdc27 75%);
+    
+    background: transparent;
+    border: 3px solid #fff;
     color: #fff;
     font-weight: bold;
     text-transform: uppercase;
